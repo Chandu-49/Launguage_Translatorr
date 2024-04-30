@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+.body1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:#252526;
+    
+}
+
+.container{
+    width:600px;
+    background:#fff;
+    border-radius: 7px;
+    padding:30px;
+}
+.wrapper{
+    border:1px solid #bbb;
+    border-radius:5px;
+    
+}
+.wrapper .text-input{
+    display:flex;
+    border-bottom:1px solid#bbb;
+}
+.text-input .to-text{
+    border-radius: 0px;
+    border-left:1px solid #bbb;
+}
+.text-input textarea{
+    height:250px;
+    width:100%;
+    border:none;
+    resize: none;
+
+    outline:none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding:10px 15px;
+    background:none;
+
+
+}
+.controls, li, .icons, .icons i{
+    display:flex;
+    align-items:center;
+    
+    justify-content: space-between;
+
+
+}
+
+.controls{
+    list-style: none;
+    padding:12px 15px;
+}
+.controls .row.from .icons{
+    padding-right:15px;
+
+    border-right:1px solid #bbb;
+}
+.controls .row.to .icons{
+    padding-left:15px;
+
+    border-left:1px solid #bbb;
+}
+
+
+.controls.icons{
+    width:38%;
+}
+.controls .icons i{
+    color:#9f9f9f;
+    cursor:pointer;
+    font-size:14px;
+    justify-content: center;
+    width:50px;
+
+
+}
+.controls .row select{
+    border:none;
+    background:none;
+    font-size:18px;
+
+}
+.container .exchange{
+    color:#9f9f9f;
+    font-size:16px;
+    cursor:pointer;
+
+
+}
+.container button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    border:none;
+
+
+    outline:none;
+    background:#5d7bf4;
+    cursor:pointer;
+    border-radius:10px;
+    color:#ffffff;
+    font-size: 17px;
+}.container button:hover{
+    background-color: #3559ed;
+
+}
+.container button:active{
+    animation-name:expand;
+    animation-duration: 1000ms;
+}
+.container{
+    animation-name:glow; 
+    animation-duration:3000ms;
+}
+@keyframes glow{
+    50%{box-shadow: 1px 1px 20px #74d1f4ec;}
+}
+@keyframes glow2{
+    50%{box-shadow: 2px 2px 20px #74f4a5ec;}
+}
+
+.myhomediv{
+    width:100px;
+    height:100px;
+    border:1px solid white;
+}
+.myhomebody{
+    background-color:#252526
+}
+
+.mytranslatontext{
+    color:white;
+    margin-top:50px;
+    text-align: center;
+    margin-left:100px;
+
+}
+.mytranslationimage{
+    margin-top: 30px;
+    width:800px;
+    height:500px;
+    margin-left:400px;
+    border-radius: 10px;
+    animation-name:glow2;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+
+}
+.myhomebutton{
+    width:400px;
+    padding:10px;
+    
+    margin-left: 600px;
+    color:white;
+    background-color: rgb(127, 239, 148);
+    border-radius: 10px;
+    cursor:pointer;
+    font-size: 20px;
+    font-style: bold;
+    
+    
+  
+
+    
+
+}
+.myhomebutton:active{
+    animation-name:expand;
+    animation-duration: 1000ms;
+
+}
+.myspan{
+    background-color: rgba(116, 116, 116, 0.774) ;
+    border-radius: 7px;
+    animation-name:backgroundchange;
+    animation-duration: 6000ms;
+    animation-iteration-count: infinite;
+
+}
+@keyframes  backgroundchange{
+    33%{background-color: rgb(110, 230, 158);}
+    66%{background-color: rgb(203, 114, 50);}
+
+
+    99%{background-color:rgb(51, 155, 216)}
+    
+}
+@keyframes expand{
+    50%{transform: scale(0.95);}
+}
